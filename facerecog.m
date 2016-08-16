@@ -1,7 +1,7 @@
 
 clear all;
 close all;
-noc = 10; %jumlah kelas 
+noc = 40; %jumlah kelas 
 nos = 10; %jumlah data
 k = 1;
 for i = 1:noc
@@ -46,30 +46,30 @@ for i = 1:noc
                 
                 GLCM2 = graycomatrix(h3,'Offset',[0 1]);
                 stats7 = GLCM_Features1(GLCM2,0);
-                GLCM2 = graycomatrix(v3,'Offset',[-1 1]);
+                GLCM2 = graycomatrix(v3,'Offset',[-1 0]);
                 stats8 = GLCM_Features1(GLCM2,0);
                 GLCM2 = graycomatrix(d3,'Offset',[-1 1]);
                 stats9 = GLCM_Features1(GLCM2,0);
                 
                 f(k,1) = stats1.energ; f(k,2) = stats2.energ; f(k,3) = stats3.energ;
                 f(k,4) = stats1.entro; f(k,5) = stats2.entro; f(k,6) = stats3.entro;
-                f(k,7) = stats1.denth; f(k,8) = stats2.denth; f(k,9) = stats3.denth;
-                f(k,10) = stats1.sosvh; f(k,11) = stats2.sosvh; f(k,12) = stats3.sosvh; 
-                f(k,13) = stats1.svarh; f(k,14) = stats2.svarh; f(k,15) = stats3.svarh; 
+                f(k,7) = stats1.contr; f(k,8) = stats2.contr; f(k,9) = stats3.contr;
+                f(k,10) = stats1.corrp; f(k,11) = stats2.corrp; f(k,12) = stats3.corrp; 
+                f(k,13) = stats1.homop; f(k,14) = stats2.homop; f(k,15) = stats3.homop; 
                 f(k,16) = stats1.dvarh; f(k,17) = stats2.dvarh; f(k,18) = stats3.dvarh;
                 
                 f(k,19) = stats4.energ; f(k,20) = stats5.energ; f(k,21) = stats6.energ;
                 f(k,22) = stats4.entro; f(k,23) = stats5.entro; f(k,24) = stats6.entro;
-                f(k,25) = stats4.denth; f(k,26) = stats5.denth; f(k,27) = stats6.denth;
-                f(k,28) = stats4.sosvh; f(k,29) = stats5.sosvh; f(k,30) = stats6.sosvh; 
-                f(k,31) = stats4.svarh; f(k,32) = stats5.svarh; f(k,33) = stats6.svarh; 
+                f(k,25) = stats4.contr; f(k,26) = stats5.contr; f(k,27) = stats6.contr;
+                f(k,28) = stats4.corrp; f(k,29) = stats5.corrp; f(k,30) = stats6.corrp; 
+                f(k,31) = stats4.homop; f(k,32) = stats5.homop; f(k,33) = stats6.homop; 
                 f(k,34) = stats4.dvarh; f(k,35) = stats5.dvarh; f(k,36) = stats6.dvarh;
                 
                 f(k,37) = stats7.energ; f(k,38) = stats8.energ; f(k,39) = stats9.energ;
                 f(k,40) = stats7.entro; f(k,41) = stats8.entro; f(k,42) = stats9.entro;
-                f(k,43) = stats7.denth; f(k,44) = stats8.denth; f(k,45) = stats9.denth;
-                f(k,46) = stats7.sosvh; f(k,47) = stats8.sosvh; f(k,48) = stats9.sosvh; 
-                f(k,49) = stats7.svarh; f(k,50) = stats8.svarh; f(k,51) = stats9.svarh; 
+                f(k,43) = stats7.contr; f(k,44) = stats8.contr; f(k,45) = stats9.contr;
+                f(k,46) = stats7.corrp; f(k,47) = stats8.corrp; f(k,48) = stats9.corrp; 
+                f(k,49) = stats7.homop; f(k,50) = stats8.homop; f(k,51) = stats9.homop; 
                 f(k,52) = stats7.dvarh; f(k,53) = stats8.dvarh; f(k,54) = stats9.dvarh;
                 
                 f(k,55) = i; k = k +1;  
